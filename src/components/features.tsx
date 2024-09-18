@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Calendar, PhoneCall, SearchCheck, Truck,Route,HelpCircle,PercentSquare, Heart, Percent } from "lucide-react";
+import { Calendar, PhoneCall, SearchCheck, Truck,Route,HelpCircle, Heart, Percent } from "lucide-react";
 
 
 export function FeaturesSection() {
