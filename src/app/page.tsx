@@ -217,7 +217,7 @@ export default function Component() {
               <p className="text-md md:text-lg mb-2 text-gray-200">Count on quality! Our tires are thoroughly tested with a tire testing machine (3 Bar air pressure). We sell only premium brands with fresh DOT.
               .</p>
               <p className="text-md md:text-lg text-gray-200">
-              High-quality tires don't have to be expensive. With our attractive prices, we offer you cost-effective solutions without compromising on quality and safety.
+              High-quality tires do not have to be expensive. With our attractive prices, we offer you cost-effective solutions without compromising on quality and safety.
               </p>
             </CardContent>
             <CardFooter className="flex flex-col gap-4 items-start">

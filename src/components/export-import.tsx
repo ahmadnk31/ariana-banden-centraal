@@ -1,8 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from './ui/button';
+
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { FaTools } from 'react-icons/fa';
 import { cn } from '@/lib/utils';
@@ -19,7 +18,7 @@ const ExportWorldwide: React.FC = () => {
     },
     {
       title: 'Transport Support',
-      description: 'We naturally support you in organizing and carrying out your transport. With our efficient packaging technique, we can fit up to three used tires in a \'doubling, tripling, and quadrupling\' manner, which means containers can be loaded with up to double the number of tires.',
+      description: 'We naturally support you in organizing and carrying out your transport. With our efficient packaging technique, we can fit up to three used tires in a &apos doubling &apos, tripling, and quadrupling  manner, which means containers can be loaded with up to double the number of tires.',
       icon: '📦',
       image: '/export.jpg',
       id: 'transportSupport'
@@ -59,7 +58,7 @@ const ExportWorldwide: React.FC = () => {
 <h1 className="flex items-center gap-3 md:gap-4 text-lg md:text-xl text-white">
                 Quality Levels 
                 </h1>
-                <p className='text-sm md:text-base text-gray-400 mt-2'>We naturally support you in organizing and carrying out your transport. With our efficient packaging technique, we can fit up to three used tires in a 'doubling, tripling, and quadrupling' manner, which means containers can be loaded with up to double the number of tires.</p>
+                <p className='text-sm md:text-base text-gray-400 mt-2'>We naturally support you in organizing and carrying out your transport. With our efficient packaging technique, we can fit up to three used tires in a &apos doubling, tripling, and quadrupling &apos manner, which means containers can be loaded with up to double the number of tires.</p>
 
             </CardContent>
        </Card>
