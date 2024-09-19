@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 
-import { ArrowDown, ArrowLeftRight, ArrowUpRight, ChevronDown,  Crown, Mail, PhoneCall, Recycle, Send } from "lucide-react"
+import { ArrowDown, ArrowLeftRight, ArrowUpRight, ChevronDown,  Crown, Mail, PhoneCall, Pin, Recycle, Send, Star, StarHalfIcon } from "lucide-react"
 
 import {
   DropdownMenu,
@@ -13,7 +13,7 @@ import {
 import { FaFacebook, FaWhatsapp } from "react-icons/fa"
 import Link from "next/link"
 import { BiWorld } from "react-icons/bi"
-import { StarFilledIcon } from "@radix-ui/react-icons"
+import { InfoCircledIcon, StarFilledIcon } from "@radix-ui/react-icons"
 import { FeaturesSection } from "@/components/features"
 import ExportWorldwide from "@/components/export-import"
 
@@ -69,19 +69,19 @@ export default function Component() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <a href="tel:+49123456789" className="flex items-center" target="_blank">
+                  <a href="tel:+32467662197" className="flex items-center" target="_blank">
                     <PhoneCall className="mr-2 h-4 w-4" />
                    Call us
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem >
-                  <a href="mailto:nikzadahmadullah@gmail.com" className="flex items-center" target="_blank">
+                  <a href="mailto:Amirjan.nikzad2020@gmail.com" className="flex items-center" target="_blank">
                     <Mail className="mr-2 h-4 w-4" />
                     Email us
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <a href="https://wa.me/0032467871205" className="flex items-center" target="_blank">
+                  <a href="https://wa.me/0032467662197" className="flex items-center" target="_blank">
                     <FaWhatsapp className="mr-2 h-4 w-4" />
                     Whatsapp
                     <ArrowUpRight className="ml-2 h-4 w-4" />
@@ -110,19 +110,19 @@ export default function Component() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <a href="tel:+49123456789" className="flex items-center" target="_blank">
+                  <a href="tel:+32467662197" className="flex items-center" target="_blank">
                     <PhoneCall className="mr-2 h-4 w-4" />
                    Call us
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem >
-                  <a href="mailto:nikzadahmadullah@gmail.com" className="flex items-center" target="_blank">
+                  <a href="mailto:Amirjan.nikzad2020@gmail.com" className="flex items-center" target="_blank">
                     <Mail className="mr-2 h-4 w-4" />
                     Email us
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <a href="https://wa.me/0032467871205" className="flex items-center" target="_blank">
+                  <a href="https://wa.me/0032467662197" className="flex items-center" target="_blank">
                     <FaWhatsapp className="mr-2 h-4 w-4" />
                     Whatsapp
                     <ArrowUpRight className="ml-2 h-4 w-4" />
@@ -144,7 +144,7 @@ export default function Component() {
               We take care of the professional disposal of your used tires. We offer a free disposal service for businesses.
             </CardDescription>
            <Button variant="destructive" className=" bg-black hover:bg-black/90">
-             <Link href="#quality" className="flex gap-2 items-center group">
+             <Link href="#used-tyre-disposal" className="flex gap-2 items-center group">
              More info <ChevronDown className="ml-2 h-4 w-4 group-hover:mt-1 transition" />
               </Link>
               </Button>
@@ -162,7 +162,7 @@ export default function Component() {
               We export used tires worldwide. We offer a wide range of quality-tested used tires for cars, trucks, and motorcycles.
               .</CardDescription>
            <Button variant="destructive" className=" bg-black hover:bg-black/90">
-             <Link href="#quality" className="flex gap-2 items-center group">
+             <Link href="#export" className="flex gap-2 items-center group">
              More info <ChevronDown className="ml-2 h-4 w-4 group-hover:mt-1 transition" />
               </Link>
               </Button>
@@ -214,9 +214,9 @@ export default function Component() {
               <CardTitle className="text-xl md:text-4xl text-white">High Quality & Affordable</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-base md:text-lg mb-2 text-gray-200">Count on quality! Our tires are thoroughly tested with a tire testing machine (3 Bar air pressure). We sell only premium brands with fresh DOT.
+              <p className="text-base md:text-lg mb-2 text-gray-400">Count on quality! Our tires are thoroughly tested with a tire testing machine (3 Bar air pressure). We sell only premium brands with fresh DOT.
               .</p>
-              <p className="text-base md:text-lg text-gray-200">
+              <p className="text-base md:text-lg text-gray-400">
               High-quality tires do not have to be expensive. With our attractive prices, we offer you cost-effective solutions without compromising on quality and safety.
               </p>
             </CardContent>
@@ -229,6 +229,7 @@ export default function Component() {
                   </div>
                 ))
               }
+              
               </div>
               <p className="text-gray-200">
               <span className="font-bold">4,8</span> / 5 Rating based on <span className="font-bold">customer reviews</span>
@@ -306,22 +307,29 @@ export default function Component() {
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-bold">Ariana Banden Centraal</h3>
             <p className="text-sm text-gray-300">Your reliable partner for used tire disposal and tire service</p>
+            Monday - Saturday 9:00 AM - 6:00 PM CET <span className='text-white bg-destructive/70 flex gap-2 items-center rounded w-fit p-2'>
+            <InfoCircledIcon className="size-6" /> Only
+            with appointment</span>
           </div>
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-bold">Contact</h3>
-            <p className="text-sm text-gray-300">Ledegem 8880, Belgium</p>
-            <p className="text-sm text-gray-300">+32 56 77 77 77</p>
+            <p className="text-sm text-gray-300 flex flex-col">
+              <span className="font-bold">
+                Address</span>
+            Provinciebaan 192A Ledegem 8880, Belgium
+            </p>
+            <p className="text-sm text-gray-300">+32 467662197</p>
             <p className="text-sm text-gray-300 flex gap-3">
               <a href="mailto:nikzadahmad@gmail.com" className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
               </a>
-              <a href="https://" className="flex items-center gap-2">
+              <a href="https://www.facebook.com/profile.php?id=100045062037203" className="flex items-center gap-2" target="_blank">
                 <FaFacebook className="w-4 h-4" />
               </a>
-              <a href="https://wa.me/0032467871205" className="flex items-center gap-2">
+              <a href="https://wa.me/0032467662197" className="flex items-center gap-2" target="_blank">
                 <FaWhatsapp className="w-4 h-4" />
               </a>
-              <a href="https://www.arianabanden.be" className="flex items-center gap-2">
+              <a href="https://g.co/kgs/L2FU3e3" className="flex items-center gap-2" target="_blank">
                 <BiWorld className="w-4 h-4" />
               </a>
 

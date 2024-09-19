@@ -68,7 +68,7 @@ export const Navbar = () => {
             {["Home", "Services","Used tire disposal","Export","Find us", "About us", "Contact"].map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().split(" ").join("-")}`.toLowerCase()}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                  "hover:bg-gray-800"
                 }`}
