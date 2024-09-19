@@ -31,10 +31,10 @@ export default function Component() {
           className="brightness-50"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-blend-overlay bg-black/50">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4">
             Welcome to Ariana Banden Centraal
           </h1>
-          <p className="text-xl mb-6">
+          <p className="text-lg md:text-lg mb-6">
             Your reliable partner for used tire disposal and tire service
           </p>
           <Button asChild variant="destructive" size='lg' className="animate-pulse">
@@ -50,15 +50,15 @@ export default function Component() {
         <h2 className="text-4xl font-semibold text-center">Our services</h2>
         <p className="text-center text-lg mt-2 text-gray-300">From disposal to tire service - We make it easy!</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 ">
-        <Card className="flex items-start pt-6 bg-gray-800">
+        <Card className="flex flex-col md:flex-row md:items-start md:gap-0 pt-6 bg-gray-800">
          <CardHeader className="pt-0 pr-0">
          <ArrowLeftRight className="w-12 h-12 text-white bg-destructive rounded p-2" />
           </CardHeader>
           <CardContent className="flex flex-col items-start">
-            <CardTitle className="text-xl font-bold text-white">
+            <CardTitle className="text-lg md:text-xl font-bold text-white">
             Sale of New Tires
             </CardTitle>
-            <CardDescription className="text-lg text-gray-300 mb-4">
+            <CardDescription className="text-base md:text-lg text-gray-300 mb-4">
               We offer a wide range of quality-tested new tires for cars, trucks, and motorcycles. We only sell premium brands with fresh DOT.
             </CardDescription>
             <DropdownMenu>
@@ -91,20 +91,20 @@ export default function Component() {
             </DropdownMenu>
           </CardContent>
         </Card>
-        <Card className="flex items-start pt-6 bg-gray-800">
+        <Card className="flex flex-col md:flex-row md:items-start md:gap-0 pt-6 bg-gray-800">
          <CardHeader className="pt-0 pr-0">
-         <Crown className="w-12 h-12 text-white bg-destructive rounded p-2" />
+         <Crown className="size-12 text-white bg-destructive rounded p-2" />
           </CardHeader>
           <CardContent className="flex flex-col items-start">
-            <CardTitle className="text-xl font-bold text-white">
+            <CardTitle className="text-lg md:text-xl font-bold text-white">
             Sale of Used Premium Tires
             </CardTitle>
-            <CardDescription className="text-lg text-gray-300 mb-4">
+            <CardDescription className="text-base md:text-lg text-gray-300 mb-4">
               We offer a wide range of quality-tested used tires for cars, trucks, and motorcycles. We only sell premium brands with fresh DOT.
             </CardDescription>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-              <Button variant="destructive" className=" bg-black hover:bg-black/90">
+              <Button variant="destructive" className=" bg-black hover:bg-black/90 text-ellipsis text-nowrap">
              Inquire Premium second hand Typres <Send className="ml-2 h-4 w-4" />
             </Button>
               </DropdownMenuTrigger>
@@ -132,7 +132,7 @@ export default function Component() {
             </DropdownMenu>
           </CardContent>
         </Card>
-        <Card className="flex items-start pt-6 bg-gray-800">
+        <Card className="flex flex-col md:flex-row md:gap-0 items-start pt-6 bg-gray-800">
          <CardHeader className="pt-0 pr-0">
          <Recycle className="w-12 h-12 text-white bg-destructive rounded p-2" />
           </CardHeader>
@@ -150,7 +150,7 @@ export default function Component() {
               </Button>
           </CardContent>
         </Card>
-        <Card className="flex items-start pt-6 bg-gray-800">
+        <Card className="flex flex-col md:flex-row md:gap-0 items-start pt-6 bg-gray-800">
          <CardHeader className="pt-0 pr-0">
          <BiWorld className="w-12 h-12 text-white bg-destructive rounded p-2" />
           </CardHeader>
@@ -178,7 +178,7 @@ export default function Component() {
           <h2 className="text-3xl font-semibold mb-8 text-center text-gray-300">
             About Us
           </h2>
-          <p className="text-lg text-muted-foreground text-center mt-2 text-gray-300">
+          <p className="text-lg text-muted-foreground text-center mt-2 text-gray-400 leading-[2]">
           Our journey began in 2017 with a bold step into self-employment, starting from a modest double garage. Thanks to close cooperation with our valued partners – including car dealerships, tire distribution companies, workshops, and government agencies – we quickly became one of the leading used tire exporters in all of Germany. We owe this success to your trust and support. Thank you very much! Your dedicated Reifen-Gentile team.
           </p>
         </div>
@@ -191,32 +191,32 @@ export default function Component() {
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           <Card 
-          className="bg-black/70 bg-center bg-blend-overlay bg-cover flex-1"
+          className="bg-black/80 bg-center bg-blend-overlay bg-cover flex-1"
           style={{
             backgroundImage: "url('/car.jpg')",
           }}>
             <CardHeader>
-              <CardTitle className="text-4xl text-white">Fast & Reliable</CardTitle>
+              <CardTitle className="text-2xl md:text-4xl text-white">Fast & Reliable</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg text-gray-300/90">
+              <p className="text-base md:text-lg text-gray-300">
               With our lightning-fast service, you get the desired tires in the shortest possible time - for smooth vehicle operation without long waiting times.
               </p>
-              <p className="text-lg mt-4 text-gray-300/90">
+              <p className="text-base md:text-lg mt-4 text-gray-300/90">
               Rely on us and our quality-tested tires. We stand for punctuality and safety on the road.
               </p>
             </CardContent>
           </Card>
           <Card 
-          className="bg-gray-500 flex-1"
+          className="bg-gray-800 flex-1"
         >
             <CardHeader>
-              <CardTitle className="text-xl md:text-3xl lg:text-4xl text-white">High Quality & Affordable</CardTitle>
+              <CardTitle className="text-xl md:text-4xl text-white">High Quality & Affordable</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-md md:text-lg mb-2 text-gray-200">Count on quality! Our tires are thoroughly tested with a tire testing machine (3 Bar air pressure). We sell only premium brands with fresh DOT.
+              <p className="text-base md:text-lg mb-2 text-gray-200">Count on quality! Our tires are thoroughly tested with a tire testing machine (3 Bar air pressure). We sell only premium brands with fresh DOT.
               .</p>
-              <p className="text-md md:text-lg text-gray-200">
+              <p className="text-base md:text-lg text-gray-200">
               High-quality tires do not have to be expensive. With our attractive prices, we offer you cost-effective solutions without compromising on quality and safety.
               </p>
             </CardContent>
@@ -238,10 +238,10 @@ export default function Component() {
         </div>
       </section>
       <section className="py-24 px-4 md:px-32 bg-gray-800">
-        <h2 className="text-4xl font-bold mb-8 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">
           Our Quality Levels
         </h2>
-        <p className="text-center text-lg mt-4">
+        <p className="text-center text-lg mt-4 text-gray-400">
         Attention Business Owners! With a minimum stock of used tires, you are in the right place with us. Benefit from our service if 50% of the used tires have a remaining tread depth of at least 3 mm. Leave your used tires to us, without any pre-sorting – we take care of proper disposal.
         </p>
         <div className="mt-24 mb-0">

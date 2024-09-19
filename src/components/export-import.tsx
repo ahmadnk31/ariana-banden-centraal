@@ -32,10 +32,10 @@ const ExportWorldwide: React.FC = () => {
       <p className="mb-6 text-gray-400">Discover our range of certified used tires in three quality levels, available worldwide.</p>
       <div className='flex flex-col gap-4'>
       <div className='cursor-pointer' onClick={()=>setActiveTab(0)} role='button'>
-       <Card className={cn('flex gap-4 bg-transparent border-none shadow-none hover:bg-gray-800 transition',activeTab===0&&'bg-gray-800')}>
+       <Card className={cn('flex  flex-col md:flex-row bg-transparent border-none shadow-none hover:bg-gray-800 transition',activeTab===0&&'bg-gray-800')}>
          <CardHeader>
             <CardTitle className="flex items-center gap-3 md:gap-4 text-lg md:text-xl">
-             <FaTools className='text-2xl text-red-500'/>
+             <FaTools className='size-12 text-red-500'/>
             </CardTitle>
             </CardHeader>
             <CardContent className='pt-4'>
@@ -48,10 +48,10 @@ const ExportWorldwide: React.FC = () => {
        </Card>
       </div>
       <div onClick={()=>setActiveTab(1)} className='cursor-pointer'>
-      <Card className={cn('flex gap-4 bg-transparent shadow-none border-none hover:bg-gray-800 transition',activeTab===1&&'bg-gray-800')}>
+      <Card className={cn('flex flex-col md:flex-row md:gap-0 bg-transparent shadow-none border-none hover:bg-gray-800 transition',activeTab===1&&'bg-gray-800')}>
          <CardHeader>
             <CardTitle className="flex items-center gap-3 md:gap-4 text-lg md:text-xl">
-             <Grid className='text-2xl text-red-500'/>
+             <Grid className='size-12 text-red-500'/>
             </CardTitle>
             </CardHeader>
             <CardContent className='mt-4'>
