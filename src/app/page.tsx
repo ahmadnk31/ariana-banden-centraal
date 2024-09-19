@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 
-import { ArrowDown, ArrowLeftRight, ArrowUpRight, ChevronDown,  Crown, Mail, PhoneCall, Pin, Recycle, Send, Star, StarHalfIcon } from "lucide-react"
+import { ArrowDown, ArrowLeftRight, ArrowUpRight, ChevronDown,  Crown, Mail, PhoneCall, Recycle, Send } from "lucide-react"
 
 import {
   DropdownMenu,
